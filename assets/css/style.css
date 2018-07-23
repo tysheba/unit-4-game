@@ -1,5 +1,4 @@
 body {
-    background-image: url("assets/images/background-design.jpg");
     background-color: blueviolet;
 }
 
@@ -25,7 +24,6 @@ img {
 #talley {
     width: 300px;
     height: 200px;
-    background-image: url("assets/images/red_diamond2.jpg");
     border: snow solid 2px;
     margin-right: 10px;
     padding-top: 20px;
