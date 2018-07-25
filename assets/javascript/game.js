@@ -25,15 +25,17 @@ var generateRanNum = function () {
     
 };
 var winlose = function () { if (totalScore===computerval) {
-    alert("you win!");
+    console.log("you win!");
+    $("#userScore").html("<h4>Total Score <P>" + totalScore +"<p></h4>");
     wins ++;
-    $("#wins").html("<h3>Wins: "+ wins + "</h3>");
+    $("#wins").html("<h4>Wins: " + wins + "</h4>");
     generateRanNum();
 }
 else if (totalScore > computerval) { 
     console.log("you lose");
+    $("#userScore").html("<h4>Total Score <P>" + totalScore +"<p></h4>");
     losses ++;
-    $("#losses").html("<h3>Losses: " + losses+"</h3>");
+    $("#losses").html("<h4>losses: " + losses + "</h4>");
     generateRanNum ();
 }
 
@@ -46,21 +48,21 @@ $(document).ready(function (){
 generateRanNum();
 $(".crystal1").click(function() {
     totalScore = totalScore + crystal1val;
-    $("#userScore").html("Total Score <P>" + totalScore +"<p>");
+    $("#userScore").html("<h4>Total Score <P>" + totalScore +"<p></h4>");
     winlose ();
 });
 
 $(".crystal2").click(function() {
     totalScore = totalScore + crystal2val;
-    $("#userScore").html("Total Score <P>" + totalScore +"<p>");
+    $("#userScore").html("<h4>Total Score <P>" + totalScore +"<p></h4>");
     winlose();
 });$(".crystal3").click(function() {
     totalScore = totalScore + crystal3val;
-    $("#userScore").html("Total Score <P>" + totalScore +"<p>");
+    $("#userScore").html("<h4>Total Score <P>" + totalScore +"<p></h4>");
     winlose ();
 });$(".crystal4").click(function() {
     totalScore = totalScore + crystal4val;
-    $("#userScore").html("Total Score <P>" + totalScore +"<p>");
+    $("#userScore").html("<h4>Total Score <P>" + totalScore +"<p></h4>");
     winlose();
 });
 
